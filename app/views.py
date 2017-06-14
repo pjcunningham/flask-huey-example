@@ -9,10 +9,10 @@ from flask import render_template, flash, redirect, url_for, request
 from flask.views import MethodView
 
 
-class HomeView(MethodView):
+class Example1View(MethodView):
 
     def get(self):
-        return render_template('home.html', email='test@example.com')
+        return render_template('example1.html', email='test@example.com')
 
     # Taken from https://blog.miguelgrinberg.com/post/using-celery-with-flask
     def post(self):

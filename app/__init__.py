@@ -4,7 +4,7 @@ __copyright = 'Copyright 2017, Paul Cunningham'
 
 import os
 from flask import Flask
-from .views import HomeView
+from .views import Example1View
 
 
 def create_app():
@@ -14,7 +14,7 @@ def create_app():
     from .extensions import configure_extensions
     configure_extensions(_app)
 
-    _app.add_url_rule('/', view_func=HomeView.as_view('home'))
+    _app.add_url_rule('/', view_func=Example1View.as_view('home'))
 
     return _app
 
