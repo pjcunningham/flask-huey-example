@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block body %}
+
+    <h2>Flash Huey Example</h2>
+
+    <p>Taken from Miguel Grinberg's article <a href="https://blog.miguelgrinberg.com/post/using-celery-with-flask">Using Celery With Flask</a>.</p>
+
+    <a href="{{ url_for('example1') }}">Example 1</a>
+    <a href="{{ url_for('example2') }}">Example 2</a>
+
+{% endblock body %}
