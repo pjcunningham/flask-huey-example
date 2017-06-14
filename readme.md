@@ -1,7 +1,7 @@
 
 # Flask Huey Example 
 
-This is an implementation of Migual Grinberg's article [Using Celery With Flask](https://blog.miguelgrinberg.com/post/using-celery-with-flask) with [Huey](https://huey.readthedocs.io/en/latest/index.html) replacing Celery.
+This is an implementation of Miguel Grinberg's article [Using Celery With Flask](https://blog.miguelgrinberg.com/post/using-celery-with-flask) with [Huey](https://huey.readthedocs.io/en/latest/index.html) replacing Celery.
 
 ## Example 1
 #### Sending Asynchronous Emails
