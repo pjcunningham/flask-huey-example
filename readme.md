@@ -54,7 +54,7 @@ d:/Paul/.virtualenv/flask-huey-example/Scripts/activate.bat
 
 ##### Step 4
 
-Navigate to http://localhost:6060 in your browser, click link to Example 1 and then click send button.
+Navigate to http://localhost:6060 in your browser, click link to `Example 1` and then click the `Send` button.
 
 ![Huey receiving async email task command from Flask](docs/images/image-2.jpg)
 
