@@ -65,13 +65,3 @@ Navigate to http://localhost:6060 in your browser, click link to Example 1 and t
 TBD
 
 
-## Run Flask
-```run_app.py```
-
-## Run Huey Consumer
-
-```huey_consumer.py app_huey.huey```
-
-## Run SMTP Server
-```run_smtp_server.py```
-
