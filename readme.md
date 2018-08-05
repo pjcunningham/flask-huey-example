@@ -12,7 +12,7 @@ Virtual environment is called `flask-huey-example` and is located at `d:/Paul/.v
 
 Project is located at `D:/Paul/Documents/GitHub/flask-huey-example`
 
-Ensure the requirements are install into the virtual environment.
+Ensure the [requirements](requirements.txt) are installed into the virtual environment.
 
 ##### Step 1 - SMTP Server
 
