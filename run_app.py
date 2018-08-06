@@ -2,7 +2,7 @@
 __author__ = 'Paul Cunningham'
 __copyright = 'Copyright 2017, Paul Cunningham'
 
-from app import create_app
+from app import create_app, config
 
 if __name__ == '__main__':
 

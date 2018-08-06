@@ -16,7 +16,7 @@ class Example1View(MethodView):
 
     # Taken from https://blog.miguelgrinberg.com/post/using-celery-with-flask
     def post(self):
-        from app.tasks import send_async_email
+        from app.tasks import send_async_email,dummy_task
 
         email = request.form['email']
 
@@ -27,9 +27,17 @@ class Example1View(MethodView):
             # send right away
             send_async_email(msg)
             flash('Sending email to {0}'.format(email))
+        elif request.form['submit'] == 'dummy':
+            dummy_task()
         else:
             # send in one minute
             send_async_email.schedule(args=[msg], delay=60)
             flash('An email will be sent to {0} in one minute'.format(email))
+
+        return redirect(url_for('home'))
+
+    def post2(self):
+        from app.tasks import dummy_task
+        dummy_task()
 
         return redirect(url_for('home'))

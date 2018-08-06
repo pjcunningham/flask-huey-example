@@ -1,0 +1,16 @@
+https://testdriven.io/developing-an-asynchronous-task-queue-in-python
+
+https://hub.packtpub.com/looking-for-alternative-celery-try-huey/
+
+https://github.com/pjcunningham/flask-huey-example
+
+https://stackoverflow.com/questions/44501336/how-to-wire-up-huey-to-a-flask-application
+
+https://stackoverflow.com/questions/42343459/what-is-the-best-option-for-a-python-3-task-queue-on-windows-now-that-celery-4/43020171#43020171
+
+$ export HUEY_APP_SETTINGS=app.config.DevelopmentConfig
+$ python /e/miniconda2/envs/hueytest1/Scripts/huey_consumer.exe run_huey.huey
+
+
+$ export APP_SETTINGS=app.config.DevelopmentConfig
+$ python run_app.py
