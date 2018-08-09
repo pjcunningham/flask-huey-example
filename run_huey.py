@@ -8,7 +8,7 @@ huey = create_huey(config)
 
 from app.tasks import (
     send_async_email,
-    long_task
+    dummy_task
 )
 
 if __name__ == '__main__':
