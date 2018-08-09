@@ -42,4 +42,3 @@ def create_huey_app():
 
     return _app
 
-

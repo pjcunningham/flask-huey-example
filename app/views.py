@@ -5,8 +5,14 @@ __copyright = 'Copyright 2017, Paul Cunningham'
 
 from datetime import datetime
 from flask_mail import Message
-from flask import render_template, flash, redirect, url_for, request
+from flask import render_template, flash, redirect, url_for, request, jsonify
 from flask.views import MethodView
+
+
+class HomeView(MethodView):
+
+    def get(self):
+        return render_template('home.html')
 
 
 class Example1View(MethodView):
@@ -36,8 +42,10 @@ class Example1View(MethodView):
 
         return redirect(url_for('home'))
 
+
     def post2(self):
         from app.tasks import dummy_task
         dummy_task()
 
         return redirect(url_for('home'))
+
