@@ -38,6 +38,7 @@ def create_huey_app():
     # _app.config.from_object(os.environ['APP_SETTINGS'])
     _app.config.from_object(os.environ['HUEY_APP_SETTINGS'])
 
+    print(os.environ['HUEY_APP_SETTINGS'])
     from .extensions import configure_extensions
     configure_extensions(_app)
 
