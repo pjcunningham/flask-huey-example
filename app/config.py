@@ -17,6 +17,9 @@ class Config(object):
 
 
 class ProductionConfig(Config):
+    REDIS_URL = os.getenv('REDISTOGO_URL') or 'http://localhost:6379'
+    print('PROCUTION CONFIG')
+    print(REDIS_URL)
     pass
 
 
