@@ -23,6 +23,7 @@ def create_app():
     _app = Flask('app')
     _app.config.from_object(os.environ['APP_SETTINGS'])
     # _app.config.from_object(config.DevelopmentConfig)
+    print('in init/create_app')
 
     from .extensions import configure_extensions
     configure_extensions(_app)
