@@ -3,7 +3,7 @@ __author__ = 'Paul Cunningham'
 __copyright = 'Copyright 2017, Paul Cunningham'
 
 # import redis
-
+import os
 
 config = dict(
     HUEY_STORAGE_READ_TIMEOUT=1,
@@ -19,6 +19,7 @@ config = dict(
 
     # OR url notation
     # HUEY_STORAGE_URL = 'redis://[:password]@localhost:9000/1'
+    HUEY_STORAGE_URL = os.getenv('REDISTOGO_URL') or 'http://localhost:6379',
     # HUEY_STORAGE_URL = 'redis://localhost:6379/0',
     # HUEY_STORAGE_URL= 'http://localhost:6379',
     # HUEY_STORAGE_URL= 'redis://127.0.0.1:6379',

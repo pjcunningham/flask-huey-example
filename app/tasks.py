@@ -4,7 +4,7 @@ __copyright = 'Copyright 2017, Paul Cunningham'
 
 from huey import crontab
 from app import create_huey_app
-from huey_config import config
+from huey_config import pro
 from app.extensions.queue import create_huey
 from app.extensions.mail import mail
 from time import sleep
