@@ -9,8 +9,8 @@ from app.extensions.queue import create_huey
 from app.extensions.mail import mail
 from time import sleep
 
-# huey = create_huey(config)
-huey = create_huey()
+huey = create_huey(config)
+# huey = create_huey()
 
 def task2():
     sleep(10)
