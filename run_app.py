@@ -2,7 +2,7 @@
 __author__ = 'Paul Cunningham'
 __copyright = 'Copyright 2017, Paul Cunningham'
 
-from app import create_app
+from app import create_app, config
 
 if __name__ == '__main__':
 
@@ -12,3 +12,12 @@ if __name__ == '__main__':
 
     app = create_app()
     app.run(host='localhost', port=6060, debug=True)
+
+
+else:
+
+
+    app = create_app()
+    # app.run(debug=False)
+
+
